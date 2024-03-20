@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    background-color: #F2F5F9;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+}
+main{
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-block-start: 102px;
+    gap: 20px;
+}

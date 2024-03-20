@@ -1,0 +1,39 @@
+.page{
+    background-color: #fff;
+    max-width: 840px;
+    padding: 24px 72px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+.page__header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 32px;
+
+    h2{
+        font-size: 40px;
+        font-weight: '500';
+    }
+
+    hr {
+        position: relative;
+        border: none;
+        height: 2px;
+        width: 100%;
+        max-width: 252px;
+      }
+      
+      hr::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background: linear-gradient(to right, #FF9C1A, #E80505);
+      }
+}

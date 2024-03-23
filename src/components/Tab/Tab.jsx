@@ -1,9 +1,13 @@
 import './Tab.css'
 import { PropTypes } from 'prop-types'
 
-function Tab({icon, text}) {
+function Tab({icon, text, page, setPage}) {
+
   return (
-    <div className="tab">
+    <div className="tab" 
+         onClick={() => {
+           setPage(text)
+         }}>
         <span className="tab__icon">
             <img src={icon} alt={`Icono para la pestaña ${text}`} />
         </span>

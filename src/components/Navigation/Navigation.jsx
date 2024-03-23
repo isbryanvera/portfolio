@@ -1,8 +1,8 @@
 import './Navigation.css'
 import { Tab } from '../Tab/Tab'
 
-export default function Navigation() {
-
+export default function Navigation({page, setPage}) {
+    
     const tabs = [
         {
             icon: '/src/assets/Home icon.svg',
@@ -25,10 +25,11 @@ export default function Navigation() {
             text: 'Contact'
         }
     ];
-  return (
+    
+    return (
     <nav className='navigation-bar'>
         {tabs.map((tab) => (
-            <Tab key={tab.text} icon={tab.icon} text={tab.text} />
+            <Tab key={tab.text} icon={tab.icon} text={tab.text} page={page} setPage={setPage}/>
         ))}
     </nav>
   )

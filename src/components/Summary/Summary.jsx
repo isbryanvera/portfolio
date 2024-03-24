@@ -20,7 +20,7 @@ function Summary() {
   return (
     <section className="summary">
         <figure className="frame-profile">
-            <img className="frame-profile__img" src="https://via.placeholder.com/800x400" alt="Placeholder" />
+            <img className="frame-profile__img" src="/src/assets/img/profile-pic.png" alt="Placeholder" />
         </figure>
         <div className="summary__info">
             <div className="sumary__general-info">

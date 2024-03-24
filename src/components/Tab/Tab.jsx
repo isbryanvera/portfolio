@@ -1,12 +1,12 @@
 import './Tab.css'
 import { PropTypes } from 'prop-types'
 
-function Tab({icon, text, page, setPage}) {
+function Tab({icon, text, setCurrentPage}) {
 
   return (
     <div className="tab" 
          onClick={() => {
-           setPage(text)
+          setCurrentPage(text)
          }}>
         <span className="tab__icon">
             <img src={icon} alt={`Icono para la pestaña ${text}`} />

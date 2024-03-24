@@ -1,7 +1,7 @@
 import './Navigation.css'
 import { Tab } from '../Tab/Tab'
 
-export default function Navigation({page, setPage}) {
+export default function Navigation({setCurrentPage}) {
     
     const tabs = [
         {
@@ -29,7 +29,7 @@ export default function Navigation({page, setPage}) {
     return (
     <nav className='navigation-bar'>
         {tabs.map((tab) => (
-            <Tab key={tab.text} icon={tab.icon} text={tab.text} page={page} setPage={setPage}/>
+            <Tab key={tab.text} icon={tab.icon} text={tab.text} setCurrentPage={setCurrentPage}/>
         ))}
     </nav>
   )

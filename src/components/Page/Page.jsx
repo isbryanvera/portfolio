@@ -1,10 +1,10 @@
 import Navigation from '../Navigation/Navigation'
 import './Page.css'
 
-function Page({children, title, page, setPage}) {
+function Page({children, title, setCurrentPage}) {
   return (
     <section className="page">
-        <Navigation page={page} setPage={setPage}/>
+        <Navigation setCurrentPage={setCurrentPage}/>
         <div className='page__header'>
             <h2>{title}</h2>
             <hr />

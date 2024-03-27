@@ -4,21 +4,27 @@
     align-items: center;
     flex-direction: column;
     aspect-ratio: 1/1;
-    width: 60px;
+    width: 40px;
     text-align: center;
     background-color: #E1E8EF;
     border-radius: 20px;
     padding: 20px;
     cursor: pointer;
   }
-  
+
+  .tab__text.tab__text--selected{
+    color: white;
+  }
+
+  .tab.tab--selected{
+    background: linear-gradient(to right, #FF9C1A, #E80505);
+  }
   .tab__icon img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
   
   .tab__text {
-    margin-top: 10px;
     font-size: 1.2rem;
     color: #333;
   }

@@ -1,0 +1,15 @@
+.filter{
+    display: flex;
+    justify-content: flex-end;
+}
+.filter__options{
+    display: flex;
+    gap: 16px;
+}
+.option{
+    font-weight: 500;    
+    cursor: pointer;
+}
+.selected{
+    color: #FF9C1A;
+}

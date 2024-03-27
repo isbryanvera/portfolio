@@ -11,3 +11,12 @@
     background: linear-gradient(to right, #FF9C1A, #E80505);
     color: #ffffff;
 }
+
+.secondary{
+    border: solid 1px #FF9C1A;
+    transition: all ease-in-out 0.2s;
+    &:hover{
+        background: linear-gradient(to right, #FF9C1A, #E80505);
+        color: #ffffff;
+    }
+}

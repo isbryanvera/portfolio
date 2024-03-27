@@ -20,3 +20,10 @@ main{
 li{
     list-style: none;
 }
+textarea,input{
+    resize: none;
+    font-family: inherit;
+    &:focus{
+        outline: none;
+    }
+}

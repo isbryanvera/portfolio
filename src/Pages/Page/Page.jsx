@@ -1,4 +1,4 @@
-import Navigation from '../Navigation/Navigation'
+import Navigation from '../../components/Navigation/Navigation'
 import './Page.css'
 
 function Page({children, title, setCurrentPage}) {

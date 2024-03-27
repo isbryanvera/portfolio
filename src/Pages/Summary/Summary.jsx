@@ -1,6 +1,6 @@
-import { Button } from "../Button/Button"
-import { DataRow } from "../DataRow/DataRow"
-import { SocialMedia } from "../SocialMedia/SocialMedia"
+import { Button } from "../../components/Button/Button"
+import { DataRow } from "../../components/DataRow/DataRow"
+import { SocialMedia } from "../../components/SocialMedia/SocialMedia"
 import './summany.css'
 
 const socialMedia = [

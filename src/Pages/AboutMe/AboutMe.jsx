@@ -1,4 +1,4 @@
-import {Card} from '../Card/Card'
+import {Card} from '../../components/Card/Card'
 import './AboutMe.css'
 
 function AboutMe() {
@@ -29,10 +29,10 @@ function AboutMe() {
   return (
     <section className='about-me'>
        <p className='description'>
-        Hello there! I&apos;m thrilled to welcome you to my portfolio. I am a passionate and versatile
-        full-stack developer with a keen interest in exploring the latest cutting-edge technologies.
-        My journey in the world of web development has been nothing short of exhilarating, and 
-        I constantly strive to enhance my skills and embrace emerging trends in the industry.
+          Hello there! I&apos;m thrilled to welcome you to my portfolio. I am a passionate and versatile
+          full-stack developer with a keen interest in exploring the latest cutting-edge technologies.
+          My journey in the world of web development has been nothing short of exhilarating, and 
+          I constantly strive to enhance my skills and embrace emerging trends in the industry.
        </p>
        <h3 className='title'>What I do!</h3>
        <div className='information'>

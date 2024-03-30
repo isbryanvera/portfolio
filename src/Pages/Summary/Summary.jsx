@@ -5,9 +5,9 @@ import './summany.css'
 
 const socialMedia = [
     {link: 'https://www.linkedin.com/in/bryanraev/',img:'/src/assets/ri_linkedin-fill.svg', name:'LinkedIn'},
-    {link: 'https://www.instagram.com/verabyte_/',img:'/src/assets/skill-icons_instagram.svg', name:'Instagram'},
-    {link: 'https://github.com/veraBytte',img:'/src/assets/ri_github-fill.svg', name:'GitHub'},
-    {link: 'https://twitter.com/veraByte_',img:'/src/assets/simple-icons_x.svg', name:'Twitter'},
+    {link: 'https://www.instagram.com/is.bryanvera/',img:'/src/assets/skill-icons_instagram.svg', name:'Instagram'},
+    {link: 'https://github.com/isbryanvera',img:'/src/assets/ri_github-fill.svg', name:'GitHub'},
+    {link: 'https://twitter.com/Is_Bryanvera',img:'/src/assets/simple-icons_x.svg', name:'Twitter'},
 ]
 
 const data = [

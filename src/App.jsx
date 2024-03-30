@@ -1,10 +1,10 @@
 import { Summary } from "./Pages/Summary/Summary"
 import { Page } from "./Pages/Page/Page"
 import { Header } from "./components/Header/Header"
-import { AboutMe } from "./Pages/AboutMe/AboutMe"
 import { Resume } from "./Pages/Resume/Resume"
 import { Work } from "./Pages/Work/Work"
 import { Contact } from "./Pages/Contact/Contact"
+import { Home } from "./Pages/Home/Home"
 import {useState} from 'react'
 import "./styles/App.css"
 
@@ -14,7 +14,7 @@ function renderSpecificPage(page, options) {
 
 function App() {
   const pagesToNavigate = {
-    Home: <AboutMe></AboutMe>,
+    Home: <Home></Home>,
     Resume: <Resume></Resume>,
     Work : <Work></Work>,
     Contact : <Contact></Contact>

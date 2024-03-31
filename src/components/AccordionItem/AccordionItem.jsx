@@ -21,14 +21,11 @@ function extensionFile(svg) {
   return KIND_OF_EXTENSIONS[icon];
 }
 
-// ! Optimizar
 function convertedCodeToString(code){
-  if(code){
-    const flatCode = code.toString()
-      .replace(/\n+/g, '#');
-    // console.log(flatCode);
-    return flatCode
-  }
+  // Reemplazar saltos de línea por '#'
+  return code 
+    ? code.toString().replace(/\n+/g, '#') 
+    : false;
 }
 
 function createCoincidences(string,title){
@@ -49,7 +46,7 @@ function createCoincidences(string,title){
   }
 }
 
-const AccordionItem = ({ children, icon, title }) => {
+const AccordionItem = ({ children, icon, title, active }) => {
   const textInformation = convertedCodeToString(children)
 
   return(

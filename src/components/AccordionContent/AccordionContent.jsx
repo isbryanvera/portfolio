@@ -1,20 +1,22 @@
-import { formatStringLikeACodeOfAProgrammingLanguage } from "../../utils/formatedStrings";
+import { styleStringLikeACodeOfAProgrammingLanguage } from "../../utils/formatedStrings";
 import "./AccordionContent.css";
 
-const AccordionContent = ({ children, coincidences }) => {
+const AccordionContent = ({ children, coincidences, active }) => {
   if (!children) {
     return 'No hay texto';
   }
 
-  const formattedLines = formatStringLikeACodeOfAProgrammingLanguage(children, coincidences);
-  // console.log(createCoincidences(children));
+  // if (active) {
+    
+  // }
 
+  const formattedLines = styleStringLikeACodeOfAProgrammingLanguage(children, coincidences);
   return (
     <pre>
-      {formattedLines.map((section, index) => (
+      {formattedLines.map((line, index) => (
         <p className="line-content" key={index}>
           <span className="line"></span>
-          <span dangerouslySetInnerHTML={{ __html: section }} />
+          <span dangerouslySetInnerHTML={{ __html: line }} />
         </p>
       ))}
     </pre>

@@ -36,6 +36,7 @@
   pre{
     font-family: "Raleway", sans-serif;
     font-weight: 500;
+    font-size: 1.4rem;
   }
 
   .line-content{
@@ -49,4 +50,7 @@
   .other-highlight {
     color: red; /* Color para resaltar "role" */
   }
-  
+
+  .acordion-open {
+    max-height: fit-content;
+  }

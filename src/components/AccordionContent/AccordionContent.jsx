@@ -1,14 +1,10 @@
 import { styleStringLikeACodeOfAProgrammingLanguage } from "../../utils/formatedStrings";
 import "./AccordionContent.css";
 
-const AccordionContent = ({ children, coincidences, active }) => {
+const AccordionContent = ({ children, coincidences}) => {
   if (!children) {
     return 'No hay texto';
   }
-
-  // if (active) {
-    
-  // }
 
   const formattedLines = styleStringLikeACodeOfAProgrammingLanguage(children, coincidences);
   return (

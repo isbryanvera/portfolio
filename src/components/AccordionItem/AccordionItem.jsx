@@ -3,9 +3,17 @@ import { findTheKeysOfTheCode } from "../../utils/formatedStrings";
 import { AccordionContent } from "../AccordionContent/AccordionContent";
 import { RED, BLUE, GREEN } from "../../utils/variables";
 import "./AccordionItem.css";
+import { useEffect, useState } from "react";
 
 function toggleAccordion(e) {
   const content = e.currentTarget.nextElementSibling;
+  //Close the others accordions when one is open
+  const accordions = document.querySelectorAll('.accordion-content');
+  accordions.forEach(accordion => {
+    if (accordion !== content) {
+      accordion.style.maxHeight = null;
+    }
+  })
   content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
 }
 
@@ -46,18 +54,32 @@ function createCoincidences(string,title){
   }
 }
 
-const AccordionItem = ({ children, icon, title, active }) => {
-  const textInformation = convertedCodeToString(children)
+const AccordionItem = ({ children, icon, title, active = false }) => {
+  const [accordionOpen, setAccordionOpen] = useState('fit-content');
 
-  return(
+  const textInformation = convertedCodeToString(children);
+
+  // Calcular la altura del contenido cuando se active el acordeón
+  useEffect(() => {
+    if (active) {
+      const element = document.querySelector('.accordion-content');
+      if (element) {
+        const height = element.scrollHeight + 'px';
+        setAccordionOpen(height);
+      }
+    }
+  }, [active]);
+
+  return (
     <div>
       <div className="accordion-item" onClick={toggleAccordion}>
         <Label icon={icon}>{`${title}.${extensionFile(icon)}`}</Label>
       </div>
-      <div className="accordion-content">
-        <AccordionContent coincidences={createCoincidences(textInformation,title)} >{textInformation}</AccordionContent>
+      <div className={`accordion-content`} style={active ? { maxHeight: accordionOpen } : {}}>
+        <AccordionContent coincidences={createCoincidences(textInformation, title)} >{textInformation}</AccordionContent>
       </div>
     </div>
-)};
+  );
+};
 
 export { AccordionItem }

@@ -52,5 +52,5 @@
   }
 
   .acordion-open {
-    max-height: fit-content;
+    max-height: max-content;
   }

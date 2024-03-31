@@ -11,6 +11,8 @@ const str = function whoAmI() {
   }}
 
 const Accordion = () => {
+  // const [active, setActive] = useState(0);
+
   return (
     <div className="accordion">
       <AccordionItem title={'whoAmI'} icon={'/src/assets/javascript.svg'} active={true}>

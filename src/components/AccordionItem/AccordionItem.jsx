@@ -56,7 +56,6 @@ function createCoincidences(string,title){
 
 const AccordionItem = ({ children, icon, title, active = false }) => {
   const [accordionOpen, setAccordionOpen] = useState('fit-content');
-
   const textInformation = convertedCodeToString(children);
 
   // Calcular la altura del contenido cuando se active el acordeón

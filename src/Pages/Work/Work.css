@@ -1,7 +1,8 @@
 .work {
     display: flex;
     justify-content: space-between;
-  }
+    animation: fadeIn 1s ease-in-out;
+}
   
   .work__list {
     display: flex;

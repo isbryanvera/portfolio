@@ -1,0 +1,33 @@
+.work__description {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .work__description img {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 220px;
+  }
+  
+  .work__description--text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    line-height: 30px;
+  }
+
+  .work__description--title{
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 1.6rem;
+    color: var(--main-color);
+  }
+  
+  .project__technologies {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }

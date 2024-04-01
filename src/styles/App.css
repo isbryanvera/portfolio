@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --main-color : #FF9C1A;
+    --secondary-color: rgb(26, 16, 3, 50%);
+    --grey-light : #D9D9D9;
+    --grey-dark : #959595;
+}
 html{
     font-size: 62.5%;
     background-color: #F2F5F9;

@@ -1,0 +1,27 @@
+.work {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .work__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 35%;
+    gap: 16px;
+
+    & p{
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: var(--secondary-color);
+    }
+  }
+  
+  .work__list-projects {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    background-color: var(--grey-light);
+    border-radius: 10px;
+  }

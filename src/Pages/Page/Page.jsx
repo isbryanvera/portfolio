@@ -9,9 +9,9 @@ function Page({children, title, setCurrentPage}) {
             <h2>{title}</h2>
             <hr />
         </div>
-        <div>
+        <>
           {children}
-        </div>
+        </>
     </section>
   )
 }

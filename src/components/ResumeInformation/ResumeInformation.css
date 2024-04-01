@@ -20,7 +20,7 @@
 .date{
     text-wrap: nowrap;
     font-size: 1.4rem;
-    color: rgb(26, 16, 3, 50%);
+    color: var(--secondary-color);
     font-weight: 500;
 }
 .description{

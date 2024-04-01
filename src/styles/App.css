@@ -27,3 +27,19 @@ textarea,input{
         outline: none;
     }
 }
+.border__degree{
+    border: 2px solid;
+    border-image-source: linear-gradient(to right, #FF9C1A, #E80505);
+    border-image-slice: 1;
+    border-radius: 10px;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

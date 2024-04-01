@@ -13,11 +13,7 @@ const whoAmI = function whoAmI() {
 const whatIDo = function whatIDo() {
   return {
     summary: 'I specialize in web development and Salesforce administration, focusing on creating efficient and scalable solutions.',
-    skills: ['JavaScript', 'HTML/CSS', 'Salesforce', 'React', 'Node.js'],
-    projects: [
-        { name: 'Project A', description: 'Developed a web application using React and Node.js.' },
-        { name: 'Project B', description: 'Implemented custom Salesforce solutions for client needs.' }
-    ]
+    skills: ['JavaScript', 'HTML/CSS', 'Salesforce', 'React', 'Node.js']
   };
 }
 

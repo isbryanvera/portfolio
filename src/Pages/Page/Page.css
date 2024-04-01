@@ -6,7 +6,7 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 32px;
     position: relative;
 }
 .page__header{

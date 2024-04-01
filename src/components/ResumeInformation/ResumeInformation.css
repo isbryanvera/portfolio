@@ -1,0 +1,52 @@
+.resume__card{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.circle{
+    display: block;
+    min-width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: linear-gradient(to right, #FF9C1A, #E80505);;
+    z-index: 1;
+}
+.description__header{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+.date{
+    text-wrap: nowrap;
+    font-size: 1.4rem;
+    color: rgb(26, 16, 3, 50%);
+    font-weight: 500;
+}
+.description{
+    max-width: 599px;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.description__company{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(26, 16, 3, 50%);
+}
+.vertical-line{
+    border-left: 2px solid;
+    border-image-source: linear-gradient(to right, #FF9C1A, #E80505);
+    border-image-slice: 1;
+    height: 100%;
+    position: absolute;
+    left: 107px;
+}
+.arrow{
+    cursor: pointer;
+}
+.arrow--down{
+    transform: rotateX(180deg);
+}

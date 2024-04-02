@@ -11,6 +11,10 @@
     & li{
         cursor: pointer;
     }
+    & .active{
+        color: var(--main-color);
+        cursor: default;
+    }
 }
 .resume__foter{
     display: flex;

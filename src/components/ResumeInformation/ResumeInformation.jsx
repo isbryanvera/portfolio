@@ -1,16 +1,16 @@
 import "./ResumeInformation.css";
 
-const ResumeInformation = () => {
+const ResumeInformation = ({date,position,company,children}) => {
   return (
     <div className="resume__card">
-      <time className="date">01 Jun, 2015</time>
+      <time className="date">{date}</time>
       <span className="circle"></span>
       <div className="description">
         <div className="description__header">
-          <h3 className="description__title">UX/UI DEVELOPER</h3>
-          <p className="description__company">Seidor</p>
+          <h3 className="description__title">{position}</h3>
+          <p className="description__company">{company}</p>
         </div>
-        <p className="description__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, commodi culpa repellendus sint doloribus ea mollitia porro, natus, itaque distinctio aspernatur minima voluptas incidunt facilis dolorem voluptatibus in ullam. Tempora.</p>
+        <p className="description__text">{children}</p>
       </div>
     </div>
   )

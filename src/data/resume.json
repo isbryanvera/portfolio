@@ -1,0 +1,51 @@
+[
+    {   
+        "type" : "Experience",
+        "date": "01/01/2015",
+        "position": "UX/UI DEVELOPER",
+        "company": "Seidor",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, commodi culpa repellendus sint doloribus ea mollitia porro, natus, itaque distinctio aspernatur minima voluptas incidunt facilis dolorem voluptatibus in ullam. Tempora."
+    },
+    {
+        "type" : "Experience",
+        "date": "01/01/2016",
+        "position": "FRONTEND DEVELOPER",
+        "company": "Seidor",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, commodi culpa repellendus sint doloribus ea mollitia porro, natus, itaque distinctio aspernatur minima voluptas incidunt facilis dolorem voluptatibus in ullam. Tempora."
+    },
+    {
+        "type" : "Experience",
+        "date": "01/01/2016",
+        "position": "FRONTEND DEVELOPER",
+        "company": "Seidor",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, commodi culpa repellendus sint doloribus ea mollitia porro, natus, itaque distinctio aspernatur minima voluptas incidunt facilis dolorem voluptatibus in ullam. Tempora."
+    },
+    {
+        "type" : "Experience",
+        "date": "01/01/2017",
+        "position": "FRONTEND DEVELOPER",
+        "company": "Seidor",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, commodi culpa repellendus sint doloribus ea mollitia porro, natus, itaque distinctio aspernatur minima voluptas incidunt facilis dolorem voluptatibus in ullam. Tempora."
+    },
+    {   
+        "type" : "Education",
+        "date": "01/01/2015",
+        "position": "UX/UI DEVELOPER",
+        "company": "Seidor",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, commodi culpa repellendus sint doloribus ea mollitia porro, natus, itaque distinctio aspernatur minima voluptas incidunt facilis dolorem voluptatibus in ullam. Tempora."
+    },
+    {
+        "type" : "Education",
+        "date": "01/01/2016",
+        "position": "University",
+        "company": "Seidor",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, commodi culpa repellendus sint doloribus ea mollitia porro, natus, itaque distinctio aspernatur minima voluptas incidunt facilis dolorem voluptatibus in ullam. Tempora."
+    },
+    {
+        "type" : "Education",
+        "date": "01/01/2017",
+        "position": "University",
+        "company": "Seidor",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, commodi culpa repellendus sint doloribus ea mollitia porro, natus, itaque distinctio aspernatur minima voluptas incidunt facilis dolorem voluptatibus in ullam. Tempora."
+    }
+]

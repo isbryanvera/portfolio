@@ -26,6 +26,10 @@ main{
 li{
     list-style: none;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 textarea,input{
     resize: none;
     font-family: inherit;

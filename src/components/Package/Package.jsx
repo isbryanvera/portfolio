@@ -7,7 +7,7 @@ const Package = ({ name, description }) => {
         <img src="https://via.placeholder.com/90" alt="imagen" />
       </div>
       <div className="package__information">
-        <h3 className="package__title">Tool 1</h3>
+        <h3 className="package__title"><a href="#">Tool 1</a></h3>
         <p className="package__description">Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile full-stack developer with a keen interest </p>
 
         <div className="package__resources">

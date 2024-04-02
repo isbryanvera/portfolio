@@ -24,7 +24,7 @@
 .resume__experiences{
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
     position: relative;
     animation: fadeIn 1s ease-in-out;
 }

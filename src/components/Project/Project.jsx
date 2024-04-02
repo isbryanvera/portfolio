@@ -1,26 +1,15 @@
 import "./Project.css";
 import { Label } from "../../components/Label/Label";
 
-const Project = () => {
+const Project = ({image,title,description,technologies=[]}) => {
   return (
     <figure className="work__description">
-      <img src="https://via.placeholder.com/220" alt="Project" />
+      <img src={image} alt={`Project ${title}`} />
       <figcaption className="work__description--text">
-        <p>Hello there! I`m thrilled to welcome you to my portfolio. I am a passionate and versatile full-stack developer with a keen interest in exploring the latest cutting-edge technologies.</p>
+        <p className="description__paragraph">{description}</p>
         <h3 className="work__description--title">Technologies Used</h3>
         <div className="project__technologies">
-          <Label>
-            JavaScript
-          </Label>
-          <Label>
-            NodeJs
-          </Label>
-          <Label>
-            React
-          </Label>
-          <Label>
-            Tailwind
-          </Label>
+          {technologies.map((technologie,index) => <Label key={index} >{technologie}</Label>)}
         </div>
       </figcaption>
     </figure>

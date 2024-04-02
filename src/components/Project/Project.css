@@ -33,3 +33,12 @@
     flex-wrap: wrap;
     gap: 10px;
   }
+
+  .description__paragraph{
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4; /* for WebKit browsers */
+    line-clamp: 4; /* standard property */
+  }

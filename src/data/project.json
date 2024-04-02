@@ -1,0 +1,54 @@
+[
+    {   "id": "001",
+        "image": "https://via.placeholder.com/220",
+        "description": "Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile full-stack developer with a keen interest in exploring the latest cutting-edge technologies.",
+        "title": "Hola",
+        "technologies": [
+        "JavaScript",
+        "NodeJs",
+        "React",
+        "Tailwind"
+        ],
+        "link":"#"
+    },
+    {
+        "id": "002",
+        "image": "https://via.placeholder.com/220",
+        "description": "Hola 1",
+        "title": "Hola 1",
+        "technologies": [
+        "JavaScript",
+        "NodeJs",
+        "React",
+        "Tailwind"
+        ],
+        "link":"#"
+    },
+    {
+        "id": "003",
+        "image": "https://via.placeholder.com/220",
+        "description": "Hola 2",
+        "title": "Hola 2",
+        "technologies": [
+        "JavaScript",
+        "NodeJs",
+        "React",
+        "Tailwind"
+        ],
+        "link":"#"
+    },
+    {
+        "id": "004",
+        "image": "https://via.placeholder.com/220",
+        "description": "Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile full-stack developer with a keen interest in exploring the latest cutting-edge technologies.",
+        "title": "Technologies Used",
+        "technologies": [
+        "JavaScript",
+        "NodeJs",
+        "React",
+        "Tailwind"
+        ],
+        "link":"#"
+    }
+]
+  

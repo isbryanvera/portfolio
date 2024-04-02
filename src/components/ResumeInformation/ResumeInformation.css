@@ -25,8 +25,9 @@
 }
 .description{
     max-width: 599px;
+    font-size: 1.4rem;
     width: 100%;
-    padding: 16px;
+    padding: 8px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -35,6 +36,16 @@
     font-size: 1.4rem;
     font-weight: 500;
     color: rgb(26, 16, 3, 50%);
+}
+.description__text{
+    line-height: 30px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    /* Number of lines before truncating */
+    -webkit-line-clamp: 4; /* for WebKit browsers */
+    line-clamp: 4; /* standard property */
 }
 .vertical-line{
     border-left: 2px solid;

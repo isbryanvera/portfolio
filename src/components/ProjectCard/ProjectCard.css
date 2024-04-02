@@ -1,8 +1,77 @@
-.project{
+.project-card{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 16px;
     padding: 16px;
-    background-color: var(--grey-dark);
+    background-color: #fff;
     border-radius: 10px;
-}  
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+
+    & h3{
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    & a{
+        font-size: 1.4rem;
+        color: var(--secondary-color);
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            transition: all 0.3s ease-in-out;
+            color: var(--main-color);
+        }
+    }
+}
+
+.glow-on-hover {
+    border: none;
+    outline: none;
+    color: #000;
+    cursor:default;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(to right, #FF9C1A, #E80505);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(2px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

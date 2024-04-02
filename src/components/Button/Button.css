@@ -10,6 +10,12 @@
 .main{
     background: linear-gradient(to right, #FF9C1A, #E80505);
     color: #ffffff;
+    
+    transition: all 150ms ease-in-out;
+    
+    &:hover {
+        box-shadow: 0 0 10px 0 var(--main-color) inset, 0 0 10px 4px var(--main-color);
+    }
 }
 
 .secondary{

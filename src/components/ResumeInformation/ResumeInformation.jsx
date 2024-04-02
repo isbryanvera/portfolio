@@ -1,9 +1,10 @@
 import "./ResumeInformation.css";
+import { humanizeDate } from '../../utils/time'
 
 const ResumeInformation = ({date,position,company,children}) => {
   return (
     <div className="resume__card">
-      <time className="date">{date}</time>
+      <time className="date">{humanizeDate(date)}</time>
       <span className="circle"></span>
       <div className="description">
         <div className="description__header">

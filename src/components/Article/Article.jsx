@@ -1,12 +1,12 @@
 import "./Article.css";
 
-const Article = ({ title, content }) => {
+const Article = ({ title, date, image = 'https://via.placeholder.com/220' }) => {
   return (
     <article className="blog__entry">
-      <img src="https://via.placeholder.com/220" className="blog__img" alt="Imagen"></img>
+      <img src={image} className="blog__img" alt="Imagen"></img>
       <div className="blog__description">
-        <p><a href="#">Post 1</a></p>
-        <time>01 Jan, 2015</time>
+        <p><a href="#">{title}</a></p>
+        <time>{date}</time>
       </div>
     </article>
   )

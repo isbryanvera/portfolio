@@ -2,7 +2,7 @@
     {   "id": "001",
         "image": "https://via.placeholder.com/220",
         "description": "Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile full-stack developer with a keen interest in exploring the latest cutting-edge technologies.",
-        "title": "Hola",
+        "title": "MagiCss",
         "technologies": [
         "JavaScript",
         "NodeJs",
@@ -15,7 +15,7 @@
         "id": "002",
         "image": "https://via.placeholder.com/220",
         "description": "Hola 1",
-        "title": "Hola 1",
+        "title": "NutriGen",
         "technologies": [
         "JavaScript",
         "NodeJs",
@@ -28,7 +28,7 @@
         "id": "003",
         "image": "https://via.placeholder.com/220",
         "description": "Hola 2",
-        "title": "Hola 2",
+        "title": "ShortenerUrl",
         "technologies": [
         "JavaScript",
         "NodeJs",
@@ -41,7 +41,7 @@
         "id": "004",
         "image": "https://via.placeholder.com/220",
         "description": "Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile full-stack developer with a keen interest in exploring the latest cutting-edge technologies.",
-        "title": "Technologies Used",
+        "title": "Real Estate App",
         "technologies": [
         "JavaScript",
         "NodeJs",

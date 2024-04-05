@@ -1,9 +1,26 @@
 .navigation-bar {
+    display: flex;
     position: absolute;
+    justify-content: space-around;
     top: -95px;
     left: 170px;
-    display: flex;
-    justify-content: space-around;
     gap: 40px;
+
+    @media screen and (max-width: 1050px) {
+        display: none;
+    }
+
+    &.side-bar{
+        @media screen and (max-width: 1050px) {
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          position: relative;
+          top: 0;
+          left: 0;
+      }
+    }
   }
+
+
   

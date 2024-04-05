@@ -2,7 +2,7 @@ import './Navigation.css'
 import { Tab } from '../Tab/Tab'
 import { useState } from 'react';
 
-export default function Navigation({setCurrentPage}) {
+export default function Navigation({setCurrentPage, sidePosition}) {
     const tabs = [
         {
             icon: '/src/assets/Home icon.svg',
@@ -28,9 +28,13 @@ export default function Navigation({setCurrentPage}) {
     
     const firstTab = tabs[0].text
     const [tabSelected, setTabSelected] = useState(firstTab)
+    // const calculateWidthOfScreen = () => {
+    //     const width = window.innerWidth
+    //     return width
+    // }
     
     return (
-    <nav className='navigation-bar'>
+    <nav className={`navigation-bar ${sidePosition ? 'side-bar' : ''}`}>
         {tabs.map((tab) => (
             <Tab key={tab.text} icon={tab.icon} setTabSelected={setTabSelected} tabSelected={tabSelected} text={tab.text} setCurrentPage={setCurrentPage}/>
         ))}

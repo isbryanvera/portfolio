@@ -22,6 +22,10 @@ main{
     justify-content: center;
     margin-block-start: 40px;
     gap: 20px;
+
+    @media screen and (max-width: 1050px) {
+        margin-block-start: 0;
+    }
 }
 li{
     list-style: none;
@@ -42,6 +46,15 @@ textarea,input{
     border-image-source: linear-gradient(to right, #FF9C1A, #E80505);
     border-image-slice: 1;
     border-radius: 10px;
+}
+.media-q{
+    @media screen and (max-width: 1050px) {
+        width: 100%;
+        display: flex;
+        gap: 32px;
+        padding: 0 32px;
+    }
+
 }
 @keyframes fadeIn {
     from {

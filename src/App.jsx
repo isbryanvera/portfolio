@@ -7,6 +7,7 @@ import { Contact } from "./Pages/Contact/Contact"
 import { Home } from "./Pages/Home/Home"
 import {useState} from 'react'
 import "./styles/App.css"
+import Navigation from "./components/Navigation/Navigation"
 
 function renderSpecificPage(page, options) {
   return options[page]
@@ -25,12 +26,15 @@ function App() {
   return (
     <>
       <Header></Header>
-      <main>
-        <Summary></Summary>
-        <Page title={currentPage} setCurrentPage={setCurrentPage}>
-          {renderSpecificPage(currentPage,pagesToNavigate)}
-        </Page>
-      </main>
+      <div className="media-q">
+        <Navigation setCurrentPage={setCurrentPage} sidePosition={true}></Navigation>
+        <main>
+          <Summary></Summary>
+          <Page title={currentPage} setCurrentPage={setCurrentPage}>
+            {renderSpecificPage(currentPage,pagesToNavigate)}
+          </Page>
+        </main>
+      </div>
     </>
   )
 }

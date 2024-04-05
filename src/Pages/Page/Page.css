@@ -2,6 +2,7 @@
     background-color: #fff;
     width: 100%;
     max-width: 840px;
+    min-width: 700px;
     padding: 24px 40px;
     border-radius: 20px;
     display: flex;

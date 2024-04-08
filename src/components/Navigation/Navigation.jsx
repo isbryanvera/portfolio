@@ -2,7 +2,7 @@ import './Navigation.css'
 import { Tab } from '../Tab/Tab'
 import { useState } from 'react';
 
-export default function Navigation({setCurrentPage, sidePosition}) {
+export default function Navigation({sidePosition}) {
     const tabs = [
         {
             icon: '/src/assets/Home icon.svg',
@@ -32,7 +32,7 @@ export default function Navigation({setCurrentPage, sidePosition}) {
     return (
     <nav className={`navigation-bar ${sidePosition ? 'side-bar' : ''}`}>
         {tabs.map((tab) => (
-            <Tab key={tab.text} icon={tab.icon} setTabSelected={setTabSelected} tabSelected={tabSelected} text={tab.text} setCurrentPage={setCurrentPage}/>
+            <Tab key={tab.text} icon={tab.icon} setTabSelected={setTabSelected} tabSelected={tabSelected} text={tab.text}/>
         ))}
     </nav>
   )

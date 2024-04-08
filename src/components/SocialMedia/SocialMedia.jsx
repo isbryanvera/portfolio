@@ -26,7 +26,7 @@ function SocialMedia({link, name, img}) {
 SocialMedia.propTypes = {
   link: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired
+  img: PropTypes.element.isRequired
 }
 
 export {SocialMedia}

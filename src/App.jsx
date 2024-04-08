@@ -5,8 +5,8 @@ import { Resume } from "./pages/Resume/Resume"
 import { Work } from "./pages/Work/Work"
 import { Contact } from "./pages/Contact/Contact"
 import { Home } from "./pages/Home/Home"
-import {useState} from 'react'
 import "./styles/App.css"
+import { PageContext, PageProvider } from "./context/AppContext"
 import Navigation from "./components/Navigation/Navigation"
 
 function renderSpecificPage(page, options) {
@@ -21,24 +21,23 @@ const pagesToNavigate = {
 }
 
 function App() {
-  
-  
-  //state
-  const [currentPage,setCurrentPage] = useState('Home'); // Valor por defecto del estado la primera vez que se renderiza el componente
-
   return (
-    <>
+    <PageProvider>
       <Header></Header>
       <div className="media-q">
-        <Navigation setCurrentPage={setCurrentPage} sidePosition={true}></Navigation>
+        <Navigation sidePosition={true}></Navigation>
         <main>
           <Summary></Summary>
-          <Page title={currentPage} setCurrentPage={setCurrentPage}>
-            {renderSpecificPage(currentPage,pagesToNavigate)}
-          </Page>
+          <PageContext.Consumer>
+            {({currentPage}) => (
+              <Page title={currentPage}>
+                {renderSpecificPage(currentPage,pagesToNavigate)}
+              </Page>
+            )}
+          </PageContext.Consumer>
         </main>
       </div>
-    </>
+    </PageProvider>
   )
 }
 

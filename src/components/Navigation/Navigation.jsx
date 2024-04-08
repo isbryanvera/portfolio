@@ -28,10 +28,6 @@ export default function Navigation({setCurrentPage, sidePosition}) {
     
     const firstTab = tabs[0].text
     const [tabSelected, setTabSelected] = useState(firstTab)
-    // const calculateWidthOfScreen = () => {
-    //     const width = window.innerWidth
-    //     return width
-    // }
     
     return (
     <nav className={`navigation-bar ${sidePosition ? 'side-bar' : ''}`}>

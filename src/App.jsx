@@ -1,10 +1,10 @@
-import { Summary } from "./Pages/Summary/Summary"
-import { Page } from "./Pages/Page/Page"
+import { Summary } from "./pages/Summary/Summary"
+import { Page } from "./pages/Page/Page"
 import { Header } from "./components/Header/Header"
-import { Resume } from "./Pages/Resume/Resume"
-import { Work } from "./Pages/Work/Work"
-import { Contact } from "./Pages/Contact/Contact"
-import { Home } from "./Pages/Home/Home"
+import { Resume } from "./pages/Resume/Resume"
+import { Work } from "./pages/Work/Work"
+import { Contact } from "./pages/Contact/Contact"
+import { Home } from "./pages/Home/Home"
 import {useState} from 'react'
 import "./styles/App.css"
 import Navigation from "./components/Navigation/Navigation"
@@ -20,6 +20,7 @@ function App() {
     Work : <Work></Work>,
     Contact : <Contact></Contact>
   }
+  
   //state
   const [currentPage,setCurrentPage] = useState('Home'); // Valor por defecto del estado la primera vez que se renderiza el componente
 

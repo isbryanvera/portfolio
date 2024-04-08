@@ -1,13 +1,17 @@
 import { Button } from "../../components/Button/Button"
 import { DataRow } from "../../components/DataRow/DataRow"
 import { SocialMedia } from "../../components/SocialMedia/SocialMedia"
+import InstagramIcon from "../../assets/svg/InstagramIcon"
+import GitHubIcon from "../../assets/svg/GitHubIcon"
+import LinkedInIcon from "../../assets/svg/LinkedInIcon"
+import TwitterIcon from "../../assets/svg/TwitterIcon"
 import './summany.css'
 
 const socialMedia = [
-    {link: 'https://www.linkedin.com/in/bryanraev/',img:'/src/assets/ri_linkedin-fill.svg', name:'LinkedIn'},
-    {link: 'https://www.instagram.com/is.bryanvera/',img:'/src/assets/skill-icons_instagram.svg', name:'Instagram'},
-    {link: 'https://github.com/isbryanvera',img:'/src/assets/ri_github-fill.svg', name:'GitHub'},
-    {link: 'https://twitter.com/Is_Bryanvera',img:'/src/assets/simple-icons_x.svg', name:'Twitter'},
+    {link: 'https://www.linkedin.com/in/bryanraev/',img:<LinkedInIcon/>, name:'LinkedIn'},
+    {link: 'https://www.instagram.com/is.bryanvera/',img:<InstagramIcon/>, name:'Instagram'},
+    {link: 'https://github.com/isbryanvera',img:<GitHubIcon/>, name:'GitHub'},
+    {link: 'https://twitter.com/Is_Bryanvera',img:<TwitterIcon/>, name:'Twitter'},
 ]
 
 const data = [

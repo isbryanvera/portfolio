@@ -13,13 +13,15 @@ function renderSpecificPage(page, options) {
   return options[page]
 }
 
+const pagesToNavigate = {
+  Home: <Home></Home>,
+  Resume: <Resume></Resume>,
+  Work : <Work></Work>,
+  Contact : <Contact></Contact>
+}
+
 function App() {
-  const pagesToNavigate = {
-    Home: <Home></Home>,
-    Resume: <Resume></Resume>,
-    Work : <Work></Work>,
-    Contact : <Contact></Contact>
-  }
+  
   
   //state
   const [currentPage,setCurrentPage] = useState('Home'); // Valor por defecto del estado la primera vez que se renderiza el componente

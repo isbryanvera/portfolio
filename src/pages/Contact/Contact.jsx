@@ -2,6 +2,7 @@ import "./Contact.css";
 import getPosts from "../../services/api";
 import { Article } from "../../components/Article/Article";
 import { Package } from "../../components/Package/Package";
+import { Loader } from "../../components/Loader/Loader.jsx";
 import { useState, useEffect } from "react";
 
 function Contact() {
@@ -19,10 +20,6 @@ function Contact() {
     }
   }, []);
 
-  if (!data) {
-    return <p className="loader">Loading...</p>;
-  }
-
   function printData(dataToPrint) {
     if (dataToPrint.length === 0) {
       return <p className="">No hay post disponibles</p>;
@@ -30,6 +27,10 @@ function Contact() {
     return dataToPrint.map((post, index) => {
       return <Article key={index} {...post} />;
     });
+  }
+
+  if (!data) {
+    return <Loader/>;
   }
 
   return (

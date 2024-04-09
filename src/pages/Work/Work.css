@@ -1,5 +1,6 @@
 .work {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     animation: fadeIn 1s ease-in-out;
 }

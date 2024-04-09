@@ -15,16 +15,37 @@ html{
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
 }
+body{
+    padding: 0 32px;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+
+    /* Insercion */
+    justify-content: center;
+
+    @media screen and (max-width: 1050px) {
+        justify-content: initial;
+        padding-top: 32px;
+    }
+}
+
+#root{
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
 main{
     font-size: 1.6rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-block-start: 40px;
     gap: 20px;
 
-    @media screen and (max-width: 1050px) {
-        margin-block-start: 0;
+    @media screen and (max-width: 1015px) {
+        flex-direction: column;
     }
 }
 li{
@@ -47,22 +68,9 @@ textarea,input{
     border-image-slice: 1;
     border-radius: 10px;
 }
-.media-q{
-    @media screen and (max-width: 1050px) {
-        width: 100%;
-        display: flex;
-        gap: 32px;
-        padding: 0 32px;
-    }
 
+@media screen and (max-width: 1050px) {
+    main {
+        margin-block-start: 0;
+    }
 }
-@keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }

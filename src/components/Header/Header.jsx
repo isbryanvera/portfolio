@@ -1,8 +1,11 @@
+import Navigation from '../Navigation/Navigation'
 import './Header.css'
 
 function Header() {
   return (
-    <header className='header'>Header</header>
+    <header className='header'>
+      <Navigation/>
+    </header>
   )
 }
 export {Header}

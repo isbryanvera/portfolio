@@ -1,14 +1,22 @@
 .page{
+    flex-grow: 1;
     background-color: #fff;
-    width: 100%;
-    max-width: 840px;
-    min-width: 700px;
-    padding: 24px 40px;
+    padding: 32px 24px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 32px;
     position: relative;
+
+    width: 100vw; /* Ancho del viewport */
+    min-width: 600px; /* Ancho mínimo de 700px */
+    max-width: 840px; /* Ancho máximo de 840px */
+}
+
+@media screen and (max-width: 1318px) {
+  .page{
+    width: 100%;
+  }
 }
 .page__header{
     display: flex;

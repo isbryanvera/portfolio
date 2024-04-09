@@ -2,7 +2,7 @@ import './Navigation.css'
 import { Tab } from '../Tab/Tab'
 import { useState } from 'react';
 
-export default function Navigation({sidePosition}) {
+export default function Navigation() {
     const tabs = [
         {
             icon: '/src/assets/Home icon.svg',
@@ -30,7 +30,7 @@ export default function Navigation({sidePosition}) {
     const [tabSelected, setTabSelected] = useState(firstTab)
     
     return (
-    <nav className={`navigation-bar ${sidePosition ? 'side-bar' : ''}`}>
+    <nav className={`navigation-bar`}>
         {tabs.map((tab) => (
             <Tab key={tab.text} icon={tab.icon} setTabSelected={setTabSelected} tabSelected={tabSelected} text={tab.text}/>
         ))}

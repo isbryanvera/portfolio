@@ -1,13 +1,10 @@
 .navigation-bar {
     display: flex;
-    position: absolute;
-    justify-content: space-around;
-    top: -95px;
-    left: 170px;
+    justify-content: flex-end;
     gap: 40px;
 
-    @media screen and (max-width: 1050px) {
-        display: none;
+    @media screen and (max-width: 1015px) {
+        /* display: none; */
     }
 
     &.side-bar{

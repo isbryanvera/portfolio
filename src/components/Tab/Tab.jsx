@@ -1,18 +1,15 @@
+import { useContext } from 'react'
 import { PageContext } from '../../context/AppContext'
-import './Tab.css'
 import { PropTypes } from 'prop-types'
+import './Tab.css'
 
 function Tab({icon, text, setTabSelected, tabSelected}) {
 
   const currentTab = tabSelected === text
+  const { setCurrentPage } = useContext(PageContext)
 
   return (
-    <PageContext.Consumer>
-      {({
-        setCurrentPage
-      }) => (
-
-      <div className={`tab ${currentTab ? 'tab--selected' : ''}`} 
+    <div className={`tab ${currentTab ? 'tab--selected' : ''}`} 
           onClick={() => {
             setCurrentPage(text)
             setTabSelected(text)
@@ -22,8 +19,6 @@ function Tab({icon, text, setTabSelected, tabSelected}) {
           </span>
           <p className={`tab__text ${currentTab ? 'tab__text--selected' : ''}`}>{text}</p>
       </div>
-    )}
-    </PageContext.Consumer>
   )
 }
 

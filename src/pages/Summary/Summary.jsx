@@ -23,11 +23,11 @@ const data = [
 function Summary() {
   return (
     <section className="summary">
-        <figure className="frame-profile">
-            <img className="frame-profile__img" src="/src/assets/img/profile-pic.png" alt="Placeholder" />
-        </figure>
         <div className="summary__info">
             <div className="sumary__general-info">
+                <figure className="frame-profile">
+                    <img className="frame-profile__img" src="/src/assets/img/profile-pic.png" alt="Placeholder" />
+                </figure>
                 <h1 className="summary__name">Bryan Andres Vera</h1>
                 <p className="summary__rol">Frontend Developer</p>
                 <div className="showcase-social-media">

@@ -1,10 +1,9 @@
-import Navigation from '../../components/Navigation/Navigation'
 import './Page.css'
 
 function Page({children, title}) {
   return (
     <section className="page">
-        <Navigation/>
+        {/* <Navigation/> */}
         <div className='page__header'>
             <h2>{title}</h2>
             <hr />

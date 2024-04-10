@@ -21,9 +21,15 @@
 }
 
 .slider {
+<<<<<<< HEAD
   background-color: #F2F5F9;
   width: 100%;
   /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); */
+=======
+  width: 100%;
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+>>>>>>> 9f524498961032d650afc3943bd94baa5ebbcd32
   height: 100px;
   margin: auto;
   overflow: hidden;
@@ -94,7 +100,6 @@
   -webkit-transform: rotateZ(180deg);
           transform: rotateZ(180deg);
 }
-
 .slider::before {
   left: 0;
   top: 0;

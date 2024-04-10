@@ -68,9 +68,30 @@ textarea,input{
     border-image-slice: 1;
     border-radius: 10px;
 }
+.app-details{
+    display: none;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+
+    @media screen and (max-width: 1015px) {
+        display: flex;
+    }
+}
 
 @media screen and (max-width: 1050px) {
     main {
         margin-block-start: 0;
     }
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

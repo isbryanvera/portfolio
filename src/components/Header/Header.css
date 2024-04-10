@@ -1,10 +1,12 @@
 .header{
     width: 100%;
     max-width: 1240px;
+    padding-block: 16px;
+    background-color: #F2F5F9;
 
     @media screen and (max-width: 1014px) {
         position: sticky;
-        top: 10px;
+        top: 1px;
         z-index: 2;
     }
 }

@@ -1,0 +1,48 @@
+.package{
+    display: flex;
+    gap: 8px;
+}
+.package__overview{
+    width: 90px;
+    height: 90px;
+    aspect-ratio: 1;
+
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color: var(--color-primary);
+    }
+}
+.package__information{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.package__title{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.package__description{
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+.package__resources{
+    display: flex;
+    gap: 16px;
+}
+.package__interaction{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    & svg{
+        width: 16px;
+        height: 16px;
+    }
+
+    & span{
+        font-size: 1.2rem;
+        color: var(--color-primary);
+    }
+}

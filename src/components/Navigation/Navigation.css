@@ -1,0 +1,14 @@
+.navigation-bar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+
+    @media screen and (max-width: 1015px) {
+        justify-content: center;
+    }
+
+    @media screen and (width < 500px) {
+        gap: 24px;
+    }
+  }
+  

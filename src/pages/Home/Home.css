@@ -1,0 +1,57 @@
+.accordion {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  .accordion-item {
+    background-color: #f9f9f9;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-bottom: solid 1px #ddd;
+  }
+  .accordion-content {
+    padding: 0px 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    counter-reset: line-numbering 0;
+
+    & p{
+      line-height: 30px;
+    }
+  }
+
+  .line {
+    font-size: 14px;
+    color: #999;
+    margin-right: 10px;
+  }
+  
+  .line::before {
+    content: counter(line-numbering);
+    counter-increment: line-numbering;
+  }
+
+  pre{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+
+  .line-content{
+    text-wrap: wrap;
+  }
+
+  .highlight {
+    color: blue; /* Color para resaltar "name" */
+  }
+  
+  .other-highlight {
+    color: red; /* Color para resaltar "role" */
+  }
+
+  .acordion-open {
+    max-height: max-content;
+  }

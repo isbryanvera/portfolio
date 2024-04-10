@@ -1,0 +1,104 @@
+.project-card{
+    position: relative;
+    display: flex;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
+    
+    @media screen and (max-width: 730px) {
+      align-items: center;
+      justify-content: center;
+    }
+
+    & h3{
+        font-size: 1.8rem;
+        font-weight: 500;
+
+        @media screen and (max-width: 730px) {
+          font-size: 1.4rem;
+        }
+    
+    }
+
+    & a{
+        font-size: 1.4rem;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            transition: all 0.3s ease-in-out;
+            color: var(--main-color);
+        }
+
+        @media screen and (max-width: 730px) {
+          display: none;
+        }
+    }
+}
+
+.infotop {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    text-align: left;
+    z-index: 2;
+  }
+
+.wave {
+    position: absolute;
+    width: 540px;
+    height: 700px;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    margin-left: -50%;
+    margin-top: -70%;
+    /*background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);*/
+    background: linear-gradient(to right, #FF9C1A, #E80505);
+  }
+
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 210px;
+}
+
+.playing .wave {
+  border-radius: 40%;
+  animation: wave 3000ms infinite linear;
+}
+
+.wave {
+  border-radius: 40%;
+  animation: wave 45s infinite linear;
+}
+
+.playing .wave:nth-child(2) {
+  animation-duration: 4000ms;
+}
+
+.wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+.playing .wave:nth-child(3) {
+  animation-duration: 5000ms;
+}
+
+.wave:nth-child(3) {
+  animation-duration: 45s;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

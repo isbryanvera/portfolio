@@ -1,0 +1,48 @@
+.tab {
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    aspect-ratio: 1/1;
+    width: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+
+    @media screen and (max-width: 1015px) {
+        flex-direction: row;
+        background-color: transparent;
+        width: auto;
+        padding: 0;
+        gap: 8px;
+        aspect-ratio: initial;
+    }
+  }
+
+  .tab__text.tab__text--selected,.tab__icon.tab__text--selected svg{
+    color: white;
+
+    @media screen and (max-width: 1015px) {
+      color: #FF9C1A
+    }
+  }
+
+  .tab.tab--selected{
+    background: linear-gradient(to right, #FF9C1A, #E80505);
+
+    @media screen and (max-width: 1015px) {
+      background: transparent;
+    }
+  }
+  .tab__icon svg {
+    color: #333;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .tab__text {
+    font-size: 1.2rem;
+    color: #333;
+  }

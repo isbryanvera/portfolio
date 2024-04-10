@@ -1,0 +1,48 @@
+.work__description {
+    width: 60%;
+    max-width: 432px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media screen and (max-width: 730px) {
+      width: 100%;
+    }
+  }
+  
+  .work__description img {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+  }
+  
+  .work__description--text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    line-height: 30px;
+  }
+
+  .work__description--title{
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 1.6rem;
+    color: var(--main-color);
+  }
+  
+  .project__technologies {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .description__paragraph{
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4; /* for WebKit browsers */
+    line-clamp: 4; /* standard property */
+  }

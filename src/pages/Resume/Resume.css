@@ -1,0 +1,30 @@
+.resume{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.resume__filter{
+    display: flex;
+    justify-content: flex-end;
+    gap: inherit;
+
+    & li{
+        cursor: pointer;
+    }
+    & .active{
+        color: var(--main-color);
+        cursor: default;
+    }
+}
+.resume__foter{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.resume__experiences{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}

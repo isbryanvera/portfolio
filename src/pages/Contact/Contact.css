@@ -1,0 +1,22 @@
+.more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+.section__more-info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.blog-posts{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.packages-list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

@@ -1,0 +1,112 @@
+.summary {
+    position: relative;
+    min-width: 320px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 114px 24px 24px;
+    border-radius: 20px;
+    background-color: #fff;
+    background-image:  radial-gradient(#FF9C1A 0.9500000000000001px, transparent 0.9500000000000001px), radial-gradient(#FF9C1A 0.9500000000000001px, #fff 0.9500000000000001px);
+    background-size: 38px 38px;
+    background-position: 0 0,19px 19px;
+
+    @media screen and ( width < 1015px) {
+        padding: 24px;
+        gap: 32px;
+     }
+
+    @media screen and ( 730px < width < 1015px) {
+       max-width: none;
+    }
+
+    @media screen and (width <  730px) {
+        align-self:center;
+        min-width: 300px;
+        max-width: 450px;
+    }
+ 
+}
+.summary__hook{
+    text-align: center;
+    display: none;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--grey-dark);
+    @media screen and (max-width: 1015px) {
+        display: block;
+     }
+}
+.frame-profile{
+    aspect-ratio: 1/1;
+    height: 200px;
+    position: absolute;
+    top: calc(-200px / 2);
+
+    @media screen and (max-width: 1015px) {
+        position: relative;
+        top: 0;
+    }
+}
+.frame-profile__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.summary__info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    
+    @media screen and (730px < width < 1015px) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+.sumary__general-info{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+.summary__name{
+    font-size: 28px;
+    font-weight: bold;
+}
+.summary__rol{
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+.showcase-social-media{
+    display: flex;
+    width: 296px;
+    justify-content: space-between;
+}
+.summary__details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    background-color: #F2F5F9;
+    border-radius: 20px;
+    padding: 32px 20px;
+
+    @media screen and (max-width: 1015px) {
+        max-width: 450px;
+    }
+
+    @media screen and (width < 730px) {
+    }
+}
+.summary__contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

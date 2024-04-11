@@ -11,7 +11,7 @@
     text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
     background: linear-gradient(15deg, #cc3f47, #de6f3d, #f09f33, #de6f3d, #cc3f47, #aa2068) no-repeat;
     background-size: 300%;
-    color: #fff;
+    color: var(--white);
     border: none;
     background-position: left center;
     box-shadow: 0 30px 10px -20px rgba(0,0,0,.2);
@@ -29,6 +29,6 @@
     &:hover{
         /*background: linear-gradient(to right, #FF9C1A, #E80505);*/
         background: linear-gradient(15deg, #cc3f47, #de6f3d, #f09f33, #de6f3d, #cc3f47, #aa2068) no-repeat;
-        color: #ffffff;
+        color: var(--white);
     }
 }

@@ -21,15 +21,9 @@
 }
 
 .slider {
-<<<<<<< HEAD
-  background-color: #F2F5F9;
+  background-color : inherit;
   width: 100%;
   /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); */
-=======
-  width: 100%;
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
->>>>>>> 9f524498961032d650afc3943bd94baa5ebbcd32
   height: 100px;
   margin: auto;
   overflow: hidden;
@@ -63,7 +57,7 @@
 }
 
 .slider::before, .slider::after {
-  background: linear-gradient(to right, #F2F5F9 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, inherit 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 100px;
   position: absolute;

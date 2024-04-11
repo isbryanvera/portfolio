@@ -6,7 +6,7 @@
     animation: fadeIn 1s ease-in-out;
   }
   .accordion-item {
-    background-color: #f9f9f9;
+    background-color: var(--white);
     padding: 12px 24px;
     cursor: pointer;
     border-bottom: solid 1px #ddd;
@@ -17,6 +17,7 @@
     overflow: hidden;
     transition: max-height 0.3s ease-out;
     counter-reset: line-numbering 0;
+    background-color: var(--white);
 
     & p{
       line-height: 30px;

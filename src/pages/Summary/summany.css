@@ -7,8 +7,7 @@
     align-items: center;
     padding: 114px 24px 24px;
     border-radius: 20px;
-    background-color: #fff;
-    background-image:  radial-gradient(#FF9C1A 0.9500000000000001px, transparent 0.9500000000000001px), radial-gradient(#FF9C1A 0.9500000000000001px, #fff 0.9500000000000001px);
+    background-image:  radial-gradient(#FF9C1A 0.9500000000000001px, transparent 0.9500000000000001px), radial-gradient(#FF9C1A 0.9500000000000001px, var(--white) 0.9500000000000001px);
     background-size: 38px 38px;
     background-position: 0 0,19px 19px;
 
@@ -33,7 +32,7 @@
     display: none;
     font-size: 32px;
     font-weight: 500;
-    color: var(--grey-dark);
+    color: var(--grey-variety);
     @media screen and (max-width: 1015px) {
         display: block;
      }
@@ -93,7 +92,7 @@
     flex-direction: column;
     gap: 24px;
     align-items: center;
-    background-color: #F2F5F9;
+    background-color: var(--grey-light);
     border-radius: 20px;
     padding: 32px 20px;
 

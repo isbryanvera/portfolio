@@ -8,12 +8,13 @@
     display: flex;
     justify-content: flex-end;
     gap: inherit;
+    color: var(--font-color-secondary);
 
     & li{
         cursor: pointer;
     }
     & .active{
-        color: var(--main-color);
+        color: var(--font-color-primary);
         cursor: default;
     }
 }

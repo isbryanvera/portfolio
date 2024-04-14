@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     padding-block-end: 12px;
-    border-bottom: 1px solid var(--grey-dark);
+    border-bottom: 1px solid var(--secondary-grey);
     gap: 16px;
   }
 
@@ -32,6 +32,7 @@
     flex-direction: column;
     width: 100%;
     gap: 4px;
+    font-size: 1.4rem;
   }
   
   .data__subject {
@@ -39,5 +40,5 @@
   }
   
   .data__text {
-    color: #666;
+    color: var(--font-color-secondary);
   }

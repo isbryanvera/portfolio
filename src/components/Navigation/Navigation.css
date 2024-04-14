@@ -5,6 +5,9 @@
     justify-content: flex-end;
     gap: 40px;
     height: fit-content;
+    background-color: var(--page);
+    padding: 8px;
+    border-radius: 10px;
 
     @media screen and (max-width: 1015px) {
         justify-content: center;

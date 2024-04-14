@@ -6,7 +6,7 @@
     animation: fadeIn 1s ease-in-out;
   }
   .accordion-item {
-    background-color: var(--white);
+    background-color: var(--primary-grey);
     padding: 12px 24px;
     cursor: pointer;
     border-bottom: solid 1px #ddd;

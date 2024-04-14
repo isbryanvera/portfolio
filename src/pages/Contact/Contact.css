@@ -1,7 +1,7 @@
 .more{
     display: flex;
+    width: 100%;
     flex-direction: column;
-    justify-content: center;
     gap: 40px;
     animation: fadeIn 1s ease-in-out;
 }

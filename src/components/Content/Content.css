@@ -1,0 +1,29 @@
+main{
+  font-size: 1.6rem;
+  display: flex;
+  gap: 20px;
+  width: calc(70% - 112px);
+  margin-bottom: 32px;
+
+  @media screen and (max-width: 1015px) {
+      flex-direction: column;
+  }
+}
+
+.border__degree{
+  border: 2px solid;
+  border-image-source: linear-gradient(to right, #FF9C1A, #E80505);
+  border-image-slice: 1;
+  border-radius: 10px;
+}
+.app-details{
+  display: none;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  margin-block: 16px;
+
+  @media screen and (max-width: 1015px) {
+      display: flex;
+  }
+}

@@ -9,7 +9,7 @@ function Tab({icon, text, setTabSelected, tabSelected}) {
   const { setCurrentPage } = useContext(PageContext)
 
   return (
-    <div className={`tab ${currentTab ? 'tab--selected' : ''}`} 
+    <li className={`tab ${currentTab ? 'tab--selected' : ''}`} 
           onClick={() => {
             setCurrentPage(text)
             setTabSelected(text)
@@ -17,8 +17,8 @@ function Tab({icon, text, setTabSelected, tabSelected}) {
           <span className={`tab__icon ${currentTab ? 'tab__text--selected' : ''}`}>
               {icon}
           </span>
-          <a href={`#${text}`} className={`tab__text ${currentTab ? 'tab__text--selected' : ''}`}>{text}</a>
-      </div>
+          <a className={`tab__text ${currentTab ? 'tab__text--selected' : ''}`}>{text}</a>
+      </li>
   )
 }
 

@@ -1,5 +1,5 @@
 .page{
-    flex-grow: 1;
+    box-sizing: content-box;
     background-color: var(--white);
     padding: 32px 24px;
     border-radius: 20px;
@@ -7,30 +7,10 @@
     flex-direction: column;
     gap: 32px;
     position: relative;
-    min-height: 670px;
-
-    width: 100%; /* Ancho del viewport */
-    min-width: 600px; /* Ancho mínimo de 700px */
-    max-width: 840px; /* Ancho máximo de 840px */
-
-    @media screen and (width > 1318px) {
-      width: 100vw;
-    }
-
-    @media screen and (max-width: 1015px) {
-        min-height: 85vh;
-    }
-
-    @media screen and (width < 730px) {
-      min-width: calc(390px - 32px);
-  }
+    min-height: calc(100vh - 200px);
+    width: 100%;
 }
 
-@media screen and (width > 1318px) {
-  .page{
-    width: 100vw;
-  }
-}
 .page__header{
     display: flex;
     justify-content: start;

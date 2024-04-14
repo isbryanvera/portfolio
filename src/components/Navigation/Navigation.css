@@ -1,7 +1,10 @@
 .navigation-bar {
+    position: sticky;
+    top: 8px;
     display: flex;
     justify-content: flex-end;
     gap: 40px;
+    height: fit-content;
 
     @media screen and (max-width: 1015px) {
         justify-content: center;
@@ -10,5 +13,11 @@
     @media screen and (width < 500px) {
         gap: 24px;
     }
+  }
+
+  .navigation-bar__list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
   

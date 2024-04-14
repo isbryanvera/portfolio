@@ -3,7 +3,6 @@ main{
   display: flex;
   gap: 20px;
   width: calc(70% - 112px);
-  margin-bottom: 32px;
 
   @media screen and (max-width: 1015px) {
       flex-direction: column;

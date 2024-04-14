@@ -1,5 +1,5 @@
 .page{
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
     background-color: var(--white);
     padding: 32px 24px;
     border-radius: 20px;
@@ -7,7 +7,7 @@
     flex-direction: column;
     gap: 32px;
     position: relative;
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 200px);;
     width: 100%;
 }
 

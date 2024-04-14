@@ -1,25 +1,32 @@
 .tab {
-    box-sizing: content-box;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    aspect-ratio: 1/1;
-    width: 40px;
-    text-align: center;
-    background-color: var( --grey-dark );
-    border-radius: 20px;
-    padding: 20px;
-    cursor: pointer;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  aspect-ratio: 1/1;
+  width: 40px;
+  text-align: center;
+  background: var(--grey-dark);
+  border-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+  transition: .3s;
 
-    @media screen and (max-width: 1015px) {
-        flex-direction: row;
-        background-color: transparent;
-        width: auto;
-        padding: 0;
-        gap: 8px;
-        aspect-ratio: initial;
-    }
+  @media screen and (max-width: 1015px) {
+      flex-direction: row;
+      background-color: transparent;
+      width: auto;
+      padding: 0;
+      gap: 8px;
+      aspect-ratio: initial;
   }
+
+  &:hover {
+      /* background: linear-gradient(to right, #FF9C1A, #E80505); */
+      background:  var(--main-color);
+  }
+}
+
 
   .tab__text.tab__text--selected,.tab__icon.tab__text--selected svg{
     color: white;

@@ -1,8 +1,11 @@
 import './Brand.css';
+import { SwitchMode } from '../SwitchMode/SwitchMode';
 
 const Brand = () => {
   return (
-    <header className='Brand'>Brand</header>
+    <header className='Brand'>
+      <SwitchMode/>
+    </header>
   );
 };
 

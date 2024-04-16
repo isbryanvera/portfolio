@@ -1,26 +1,22 @@
-.navigation-bar {
-    position: sticky;
-    top: 8px;
-    display: flex;
+.navigation-bar__list{
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  /* Nuevos */
+  position: sticky;
+  top: 8px;
+  height: fit-content;
+  background-color: var(--page);
+  border-radius: 10px;
+  z-index: 2;
+
+  @media screen and (max-width: 1168px) {
+    order: 1;
+    flex-direction: row;
+    width: 100%;
     justify-content: flex-end;
-    gap: 40px;
-    height: fit-content;
-    background-color: var(--page);
-    padding: 8px;
-    border-radius: 10px;
-
-    @media screen and (max-width: 1015px) {
-        justify-content: center;
-    }
-
-    @media screen and (width < 500px) {
-        gap: 24px;
-    }
+    top: 0px;
   }
-
-  .navigation-bar__list{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-  
+}

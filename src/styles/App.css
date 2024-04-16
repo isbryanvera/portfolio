@@ -6,6 +6,10 @@
 
 :root{
     --font-color-primary: #FF9C1A;
+
+    /* Media Queries */
+    --sm : 840px;
+    --md : 1168px;
 }
 
 :root[data-theme="light"] {
@@ -79,6 +83,10 @@ time{
     color: var(--font-color-secondary);
 }
 
+main{
+    font-size: 1.6rem;
+  }
+
 /* Clases */
 .portfolio {
     display: flex;
@@ -87,12 +95,25 @@ time{
     padding: 0 17px 0 32px;
     max-width: 1400px;
     margin: 0 auto;
+
+    @media screen and (max-width: 1168px) {
+        padding: 32px 0px 0 16px;
+    }
 }
 
 .portfolio__information {
     display: flex;
-    justify-content: space-between;
     gap: 16px;
+}
+
+.main__content{
+    width: 70%;
+    display: flex;
+    gap: 16px;
+
+    @media screen and (max-width: 1168px) {
+        flex-direction: column;   
+    }
 }
 
 /* Animations */

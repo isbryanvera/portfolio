@@ -10,10 +10,12 @@ const AccordionContent = ({ children, coincidences}) => {
   return (
     <pre>
       {formattedLines.map((line, index) => (
-        <p className="line-content" key={index}>
-          <span className="line"></span>
-          <span dangerouslySetInnerHTML={{ __html: line }} />
-        </p>
+        <div key={index} className="line-code">
+          <span className="number-line"></span>
+          <p className="line-content" >
+            <span dangerouslySetInnerHTML={{ __html: line }} />
+          </p>
+        </div>
       ))}
     </pre>
   );

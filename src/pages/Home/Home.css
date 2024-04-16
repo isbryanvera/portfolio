@@ -1,58 +1,17 @@
-.accordion {
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    overflow: hidden;
-    border-radius: 10px;
-    animation: fadeIn 1s ease-in-out;
-  }
-  .accordion-item {
-    background-color: var(--primary-grey);
-    padding: 12px 24px;
-    cursor: pointer;
-    border-bottom: solid 1px #ddd;
-  }
-  .accordion-content {
-    padding: 0px 10px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    counter-reset: line-numbering 0;
-    background-color: var(--white);
+.app-details{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  margin-block: 16px;
+}
 
-    & p{
-      line-height: 30px;
-    }
-  }
+.about-me__hook{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+}
 
-  .line {
-    font-size: 14px;
-    color: #999;
-    margin-right: 10px;
-  }
+.type-writing{
   
-  .line::before {
-    content: counter(line-numbering);
-    counter-increment: line-numbering;
-  }
-
-  pre{
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-size: 1.4rem;
-  }
-
-  .line-content{
-    text-wrap: wrap;
-  }
-
-  .highlight {
-    color: blue; /* Color para resaltar "name" */
-  }
-  
-  .other-highlight {
-    color: red; /* Color para resaltar "role" */
-  }
-
-  .acordion-open {
-    max-height: max-content;
-  }
+}

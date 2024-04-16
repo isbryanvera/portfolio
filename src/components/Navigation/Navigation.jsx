@@ -1,6 +1,7 @@
 import './Navigation.css'
 import { Tab } from '../Tab/Tab'
 import { useState } from 'react';
+import { AboutMeIcon } from '../../assets/svg/AboutMeIcon';
 import { HomeIcon } from '../../assets/svg/HomeIcon';
 import { ResumeIcon } from '../../assets/svg/ResumeIcon';
 import { WorkIcon } from '../../assets/svg/WorkIcon';
@@ -12,6 +13,11 @@ export default function Navigation() {
             icon: <HomeIcon/>,
             alt: 'Icono Home',
             text: 'Home'
+        },
+        {
+            icon: <AboutMeIcon/>,
+            alt: 'Icono Home',
+            text: 'About'
         },
         {
             icon: <ResumeIcon/>,
@@ -34,12 +40,12 @@ export default function Navigation() {
     const [tabSelected, setTabSelected] = useState(firstTab)
     
     return (
-    <nav className='navigation-bar'>
+    // <nav className='navigation-bar'>
         <ul className='navigation-bar__list'>
             {tabs.map((tab) => (
                 <Tab key={tab.text} icon={tab.icon} setTabSelected={setTabSelected} tabSelected={tabSelected} text={tab.text}/>
             ))}
         </ul>
-    </nav>
+    // </nav>
   )
 }

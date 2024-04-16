@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     height: calc(100vh - 200px);
-    width: calc(30% - 112px);
+    width: calc(30% - 24px);
     min-width: 320px;
     padding: 114px 24px 24px;
     background-image:  radial-gradient(#FF9C1A 0.9500000000000001px, transparent 0.9500000000000001px), radial-gradient(#FF9C1A 0.9500000000000001px, var(--page) 0.9500000000000001px);
@@ -13,30 +13,11 @@
     background-position: 0 0,19px 19px;
     border-radius: 20px;
 
-    @media screen and ( width < 1015px) {
-        padding: 24px;
-        gap: 32px;
-     }
-
-    @media screen and ( 730px < width < 1015px) {
-       max-width: none;
+    @media screen and (max-width: 1168px) {
+        padding-block-start: 24px;
+        top: 12px;
+        height: calc(100vh - 32px);
     }
-
-    @media screen and (width <  730px) {
-        align-self:center;
-        min-width: 300px;
-        max-width: 450px;
-    }
- 
-}
-.summary__hook{
-    text-align: center;
-    display: none;
-    font-size: 32px;
-    font-weight: 500;
-    @media screen and (max-width: 1015px) {
-        display: block;
-     }
 }
 .frame-profile{
     aspect-ratio: 1/1;
@@ -44,7 +25,7 @@
     position: absolute;
     top: calc(-200px / 2);
 
-    @media screen and (max-width: 1015px) {
+    @media screen and (max-width: 1168px) {
         position: relative;
         top: 0;
     }

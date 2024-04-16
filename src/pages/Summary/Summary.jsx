@@ -23,10 +23,6 @@ const data = [
 function Summary() {
   return (
     <section className="summary">
-        <div>
-            <p className="summary__hook">Welcome to my portfolio, today you&apos;ll find your</p>
-            <p className="summary__hook type-writing">next developer</p>
-        </div>
         <div className="summary__info">
             <div className="sumary__general-info">
                 <figure className="frame-profile">

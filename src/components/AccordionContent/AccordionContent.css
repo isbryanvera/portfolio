@@ -1,0 +1,17 @@
+.line-code{
+    display: flex;
+    gap: 16px;
+}
+.number-line {
+    width: 10px;
+    position: relative;
+    font-size: 14px;
+    color: #999;
+}
+
+.number-line::before {
+    top: 8px;
+    position: absolute;
+    content: counter(line-numbering);
+    counter-increment: line-numbering;
+}

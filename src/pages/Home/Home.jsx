@@ -1,3 +1,4 @@
+import { BashIcon } from "../../assets/svg/BashIcon";
 import { DataRow } from "../../components/DataRow/DataRow";
 import { Slider } from "../../components/Slider/Slider";
 import "./Home.css";
@@ -11,21 +12,25 @@ const data = [
 function Home() {
   return (
     <div className="app-details">
-        <div>
-          <p className="about-me__hook">Welcome to my portfolio, today you&apos;ll find your</p>
-          <p className="about-me__hook type-writing">next developer</p>
+      <div className="home__introduce">
+        <p className="about-me__hook">Welcome to my portfolio, today you&apos;ll find your <span className="type-writing">Next developer</span></p>
+        <BashIcon/>
+      </div>
+      <div className="home__highlighted-information">
+        <div className="home__summary">
+          <p>Desde sistemas sencillos hasta arquitecturas y escalas de gran nivel, ningún proyecto o característica es imposible. Este desarrollador es el complemento que tu equipo necesita, destacando en trabajo en equipo, comunicación asertiva y resolución de problemas para crear productos de otro nivel.</p>
+          <Slider></Slider>
         </div>
-      <p>Desde sistemas sencillos hasta arquitecturas y escalas de gran nivel, ningún proyecto o característica es imposible. Este desarrollador es el complemento que tu equipo necesita, destacando en trabajo en equipo, comunicación asertiva y resolución de problemas para crear productos de otro nivel.</p>
-      <Slider></Slider>
-      <article className="summary__details">
-                <div className="summary__contact">
-                    {data.map((info) => {
-                        return(
-                            <DataRow key={info.subject} subject={info.subject} text={info.text} icon={info.icon}/>
-                        )
-                    })}
-                </div>
-            </article>
+        <article className="summary__details">
+                  <div className="summary__contact">
+                      {data.map((info) => {
+                          return(
+                              <DataRow key={info.subject} subject={info.subject} text={info.text} icon={info.icon}/>
+                          )
+                      })}
+                  </div>
+        </article>
+      </div>
     </div>
   )
 }

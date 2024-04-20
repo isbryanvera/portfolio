@@ -1,0 +1,13 @@
+footer {
+  display: none;
+  width: 100%;
+  padding: 24px;
+  justify-content: space-between;
+  background-color: var(--page);
+  border-radius: 10px;
+
+  @media screen and (max-width: 1168px) {
+    display: flex;
+    order: 2; 
+  }
+}

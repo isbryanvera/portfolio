@@ -129,7 +129,7 @@ main{
 
     @media screen and (max-width: 1168px) {
         flex-direction: column;   
-        margin-block-start: 16px;
+        margin-block: 16px;
     }
 
     @media screen and (max-width: 990px) {

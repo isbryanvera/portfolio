@@ -9,13 +9,13 @@ import { SwitchMode } from "./components/SwitchMode/SwitchMode"
 function App() {
   return (
     <PageProvider>
-      <Brand/>
-      <SwitchMode/>
+      <Brand />
+      <SwitchMode />
       <div className="portfolio__information">
-        <Summary/>
+        <Summary />
         <main className="main__content">
-          <Content/>
-          <Navigation/>
+          <Content />
+          <Navigation />
         </main>
       </div>
     </PageProvider>

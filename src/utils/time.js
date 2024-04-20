@@ -1,12 +1,12 @@
+const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
 export function humanizeDate(myDate) {
     const date = new Date(myDate);
-    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   
-    const day = date.getDate();
     const monthIndex = date.getMonth();
     const year = date.getFullYear();
   
-    return `${monthNames[monthIndex]} ${day < 10 ? '0' + day : day} ${year}`;
+    return `${monthNames[monthIndex]}  ${year}`;
 }
 
 export function organizeByDate(array){

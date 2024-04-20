@@ -2,50 +2,57 @@
     {   
         "type" : "Experience",
         "date": "01/01/2015",
+        "endDate" : "01/05/2016",
         "position": "UX/UI DEVELOPER",
         "company": "Seidor",
         "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, commodi culpa repellendus sint doloribus ea mollitia porro, natus, itaque distinctio aspernatur minima voluptas incidunt facilis dolorem voluptatibus in ullam. Tempora."
     },
     {
         "type" : "Experience",
-        "date": "01/01/2016",
+        "date": "01/05/2016",
+        "endDate" : "01/05/2016",
         "position": "FRONTEND DEVELOPER",
         "company": "Seidor",
         "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, commodi culpa repellendus sint doloribus ea mollitia porro, natus, itaque distinctio aspernatur minima voluptas incidunt facilis dolorem voluptatibus in ullam. Tempora."
     },
     {
         "type" : "Experience",
-        "date": "01/01/2018",
+        "date": "01/05/2018",
+        "endDate" : "01/05/2016",
         "position": "FRONTEND DEVELOPER",
         "company": "Seidor",
         "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, commodi culpa repellendus sint doloribus ea mollitia porro, natus, itaque distinctio aspernatur minima voluptas incidunt facilis dolorem voluptatibus in ullam. Tempora."
     },
     {
         "type" : "Experience",
-        "date": "01/01/2017",
+        "date": "01/05/2017",
+        "endDate" : "01/05/2016",
         "position": "FRONTEND DEVELOPER",
         "company": "Seidor",
         "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, commodi culpa repellendus sint doloribus ea mollitia porro, natus, itaque distinctio aspernatur minima voluptas incidunt facilis dolorem voluptatibus in ullam. Tempora."
     },
     {   
         "type" : "Education",
-        "date": "01/01/2015",
-        "position": "UX/UI DEVELOPER",
-        "company": "Seidor",
+        "date": "01/05/2015",
+        "endDate" : "01/05/2016",
+        "position": "University",
+        "company": "University",
         "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, commodi culpa repellendus sint doloribus ea mollitia porro, natus, itaque distinctio aspernatur minima voluptas incidunt facilis dolorem voluptatibus in ullam. Tempora."
     },
     {
         "type" : "Education",
-        "date": "01/01/2016",
+        "date": "01/05/2016",
+        "endDate" : "01/05/2016",
         "position": "University",
-        "company": "Seidor",
+        "company": "University",
         "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, commodi culpa repellendus sint doloribus ea mollitia porro, natus, itaque distinctio aspernatur minima voluptas incidunt facilis dolorem voluptatibus in ullam. Tempora."
     },
     {
         "type" : "Education",
-        "date": "01/01/2017",
+        "date": "01/05/2017",
+        "endDate" : "01/05/2016",
         "position": "University",
-        "company": "Seidor",
+        "company": "University",
         "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, commodi culpa repellendus sint doloribus ea mollitia porro, natus, itaque distinctio aspernatur minima voluptas incidunt facilis dolorem voluptatibus in ullam. Tempora."
     }
 ]

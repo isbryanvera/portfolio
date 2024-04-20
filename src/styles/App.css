@@ -46,11 +46,11 @@ html {
     font-size: 62.5%;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    width: calc(100vw - 15px);
     scrollbar-color: #FF9C1A transparent;
 }
 
 body {
+    width: 100%;
     transition: 0.5s;
     background-color: var(--body);
     background-image: var(--image);
@@ -97,26 +97,14 @@ main{
 
 /* Clases */
 .portfolio {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 0 17px 0 32px;
-    max-width: 1400px;
+    padding: 16px;
+    max-width: 1450px;
     margin: 0 auto;
-
-    @media screen and (max-width: var(--md)) {
-        padding: 32px 0px 0 16px;
-    }
-
-    @media screen and (max-width: 990px) {
-        padding: 16px;
-    }
 }
 
 .portfolio__information {
     display: flex;
-    gap: 16px;
-
+    gap: 24px;
     @media screen and (max-width: 990px) {
         flex-direction: column;
     }
@@ -125,11 +113,10 @@ main{
 .main__content{
     width: 70%;
     display: flex;
-    gap: 16px;
+    gap: 24px;
 
     @media screen and (max-width: 1168px) {
         flex-direction: column;   
-        margin-block: 16px;
     }
 
     @media screen and (max-width: 990px) {

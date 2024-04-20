@@ -21,6 +21,13 @@ function Home() {
           <p>Desde sistemas sencillos hasta arquitecturas y escalas de gran nivel, ningún proyecto o característica es imposible. Este desarrollador es el complemento que tu equipo necesita, destacando en trabajo en equipo, comunicación asertiva y resolución de problemas para crear productos de otro nivel.</p>
           <Slider></Slider>
         </div>
+        
+      </div>
+      <div className="home__metrics">
+        <div className="home__fun-facts">
+          <p><span>1</span> Year of experience</p>
+          <p><span>3</span> Freelance projects</p>
+        </div>
         <article className="summary__details">
                   <div className="summary__contact">
                       {data.map((info) => {
@@ -30,6 +37,7 @@ function Home() {
                       })}
                   </div>
         </article>
+
       </div>
     </div>
   )

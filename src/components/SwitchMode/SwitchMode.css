@@ -9,6 +9,12 @@
   justify-content: center;
   align-items: center;
   transition: 0.5s;
+  z-index: 3;
+  cursor: pointer;
+
+  @media screen and (max-width: 990px) {
+    top: 8px;
+  }
 }
 
 .theme-container:hover {
@@ -42,4 +48,10 @@
   animation-name: change;
   animation-duration: 1s;
   animation-direction: alternate;
+}
+
+.theme-icon{
+  width: 30px;
+  height: 30px;
+  color: var(--white);
 }

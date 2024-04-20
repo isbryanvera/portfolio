@@ -3,7 +3,7 @@
     gap: 24px;
     align-items: center;
 }
-.circle{
+.resume-circle{
     display: block;
     min-width: 12px;
     height: 12px;
@@ -45,14 +45,6 @@
     /* Number of lines before truncating */
     -webkit-line-clamp: 4; /* for WebKit browsers */
     line-clamp: 4; /* standard property */
-}
-.vertical-line{
-    border-left: 2px solid;
-    border-image-source: linear-gradient(to right, #FF9C1A, #E80505);
-    border-image-slice: 1;
-    height: 100%;
-    position: absolute;
-    left: 104px;
 }
 .arrow{
     cursor: pointer;

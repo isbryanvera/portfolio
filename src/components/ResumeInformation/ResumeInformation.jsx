@@ -5,7 +5,7 @@ const ResumeInformation = ({date,position,company,children}) => {
   return (
     <div className="resume__card">
       <time className="date">{humanizeDate(date)}</time>
-      <span className="circle"></span>
+      <span className="resume-circle"></span>
       <div className="description">
         <div className="description__header">
           <h3 className="description__title">{position}</h3>

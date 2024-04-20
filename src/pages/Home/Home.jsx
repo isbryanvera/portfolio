@@ -1,5 +1,12 @@
+import { DataRow } from "../../components/DataRow/DataRow";
 import { Slider } from "../../components/Slider/Slider";
 import "./Home.css";
+
+const data = [
+  {subject: 'Phone', text: '+57 3112535030',icon: "/src/assets/gridicons_phone.svg"},
+  {subject: 'Email', text: 'brayanandresveragar@gmail.com',icon: "/src/assets/mdi_email-open-outline.svg"},
+  {subject: 'Location', text: 'Bogotá, Colombia',icon: "/src/assets/ion_location-outline.svg"}
+]
 
 function Home() {
   return (
@@ -10,6 +17,15 @@ function Home() {
         </div>
       <p>Desde sistemas sencillos hasta arquitecturas y escalas de gran nivel, ningún proyecto o característica es imposible. Este desarrollador es el complemento que tu equipo necesita, destacando en trabajo en equipo, comunicación asertiva y resolución de problemas para crear productos de otro nivel.</p>
       <Slider></Slider>
+      <article className="summary__details">
+                <div className="summary__contact">
+                    {data.map((info) => {
+                        return(
+                            <DataRow key={info.subject} subject={info.subject} text={info.text} icon={info.icon}/>
+                        )
+                    })}
+                </div>
+            </article>
     </div>
   )
 }

@@ -11,18 +11,6 @@
     cursor: pointer;
     border-bottom: solid 1px #ddd;
   }
-  .accordion-content {
-    padding: 0px 10px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    counter-reset: line-numbering 0;
-    background-color: var(--white);
-  
-    & p{
-      line-height: 30px;
-    }
-  }
   
   pre{
     font-family: "Raleway", sans-serif;

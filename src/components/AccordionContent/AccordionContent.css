@@ -15,3 +15,15 @@
     content: counter(line-numbering);
     counter-increment: line-numbering;
 }
+
+.accordion-content {
+    padding: 0px 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    counter-reset: line-numbering 0;
+  
+    & p{
+      line-height: 30px;
+    }
+  }

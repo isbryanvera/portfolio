@@ -1,10 +1,13 @@
 import './Button.css'
 
-function Button({text, type}) {
+function Button({text, icon, type}) {
   return (
-    <div className={`button  ${type === 'main' ? 'main' : 'secondary'}`}>
+    <button className={`cssbuttons-io-button ${type}`}>
       {text}
-    </div>
+      <div className="icon">
+        {icon}
+      </div>
+    </button>
   )
 }
 

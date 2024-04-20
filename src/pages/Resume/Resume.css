@@ -30,3 +30,11 @@
     position: relative;
     animation: fadeIn 1s ease-in-out;
 }
+.vertical-line{
+    border-left: 2px solid;
+    border-image-source: linear-gradient(to right, #FF9C1A, #E80505);
+    border-image-slice: 1;
+    height: 100%;
+    position: absolute;
+    left: 104px;
+}

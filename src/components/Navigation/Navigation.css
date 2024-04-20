@@ -17,6 +17,6 @@
     flex-direction: row;
     width: 100%;
     justify-content: flex-end;
-    top: 0px;
+    top: 16px;
   }
 }

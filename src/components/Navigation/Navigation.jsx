@@ -40,12 +40,10 @@ export default function Navigation() {
     const [tabSelected, setTabSelected] = useState(firstTab)
     
     return (
-    // <nav className='navigation-bar'>
         <ul className='navigation-bar__list'>
             {tabs.map((tab) => (
                 <Tab key={tab.text} icon={tab.icon} setTabSelected={setTabSelected} tabSelected={tabSelected} text={tab.text}/>
             ))}
         </ul>
-    // </nav>
   )
 }

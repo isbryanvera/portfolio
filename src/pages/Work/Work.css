@@ -1,6 +1,7 @@
 .work {
     display: flex;
     width: 100%;
+    flex-direction: column;
     justify-content: space-between;
     animation: fadeIn 1s ease-in-out;
 
@@ -11,11 +12,12 @@
     }
 }
   
-  .work__list {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 35%;
+  .work__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+
     gap: 16px;
 
     & p{
@@ -27,22 +29,5 @@
     @media screen and (max-width: 730px) {
       text-align: left;
       width: 100%;
-    }
-  }
-  
-  .work__list-projects {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-    gap: 16px;
-    background-color: var(--grey-light);
-    border-radius: 10px;
-
-    @media screen and (max-width: 730px) {
-      flex-direction: row;
-      justify-content: space-between;
-      background-color: transparent;
-      padding: 0;
     }
   }

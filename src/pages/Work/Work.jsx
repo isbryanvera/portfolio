@@ -16,17 +16,16 @@ function Work() {
 
   return (
     <div className="work">
-      <div className="work__list">
-        <p>Number of projects <span>{data.length}</span></p>
-        <div className="work__list-projects">
-          {data.map((project, index) => (
-            <ProjectCard
+      <p>Number of projects <span>{data.length}</span></p>
+      <div className="work__grid">
+          {data.map((project, index) => {
+            const isExtended = (index + 1) % 3 === 0;
+            return <ProjectCard
               key={project.id}
-              project={project}
-              handleUpdateProject={() => handleUpdateProject(index)}
-            />
-          ))}
-        </div>
+              isExtended={isExtended} 
+              project={project} 
+              handleUpdateProject={() => handleUpdateProject(index)}/> 
+          })}
       </div>
       <Project {...currentProject} />
     </div>

@@ -1,6 +1,7 @@
 import "./ProjectCard.css";
+import { classnames } from "../../utils/utilities";
 
-const ProjectCard = ({ project, handleUpdateProject }) => {
+const ProjectCard = ({ project, handleUpdateProject, isExtended }) => {
 
   // todo Optimizar la función styleTheComponent
   function styleTheComponent({ currentTarget }) {
@@ -16,14 +17,16 @@ const ProjectCard = ({ project, handleUpdateProject }) => {
   }
 
   return (
-    <div className="project-card" onClick={styleTheComponent}>
-      <div className="wave"></div>
-      <div className="wave"></div>
-      <div className="wave"></div>
-    
+    <div className={classnames(
+        'project-card',
+        {'is-extended': isExtended}
+      )}
+      onClick={styleTheComponent}>
+      <img src={project.image} alt="" />
+      <h3>{project.title}</h3>
       <div className="infotop">
+        <p>Type: UX, UI, UXW, 3D</p>
         <h3>{project.title}</h3>
-        <a href={project.link}>See More</a>
       </div>
     </div>
   )

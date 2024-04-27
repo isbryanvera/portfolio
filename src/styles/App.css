@@ -7,6 +7,7 @@
 :root{
     --font-color-primary: #FF9C1A;
     --white: #FFFFFF;
+    --gradient : linear-gradient(90deg, #cd4242,#ff9c1a);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
 
     /* Media Queries */
     --sm : 990px;
@@ -103,6 +104,7 @@ main{
 }
 
 .portfolio__information {
+    width: 100%;
     display: flex;
     gap: 24px;
     @media screen and (max-width: 990px) {

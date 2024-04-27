@@ -125,7 +125,7 @@
   color: var(--font-color-secondary);
   line-height: 50px;
   font-family: "yesteryear", cursive;
-  background-image: linear-gradient(33deg, #9a0fe0 25%, #ff049f);
+  background: var(--font-color-primary);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   transition: 0.2s ease-in;
@@ -167,7 +167,7 @@
 .first-letter {
   font-family: yesteryear, cursive;
   font-size: 3.5rem;
-  background-image: linear-gradient(33deg, #9a0fe0 25%, #ff049f);
+  background: var(--gradient);
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }

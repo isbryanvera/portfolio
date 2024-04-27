@@ -1,7 +1,8 @@
 .app-details{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 40px;
   align-items: center;
 }
 
@@ -17,19 +18,12 @@
 .home__highlighted-information{
   width: 100%;
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .home__summary{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-
-  & p{
-    line-height: 28px;
-  }
+  line-height: 28px;
 }
 
 .bash-icon{
@@ -53,10 +47,9 @@
 
 .home__metrics{
   width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  gap: 	24px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2,minmax(280px,500px));
 }
 
 .home__fun-facts{

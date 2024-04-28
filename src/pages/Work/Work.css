@@ -13,12 +13,11 @@
 }
   
   .work__grid {
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: auto;
 
-    gap: 16px;
+    gap: 32px;
 
     & p{
         font-size: 1.4rem;

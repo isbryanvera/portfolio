@@ -1,9 +1,14 @@
 .work__description {
-    width: 60%;
+    position: sticky;
+    background-color: white;
+    width: 100%;
     max-width: 432px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin: 0 auto;
+    top: calc(50vh - 262px);
+    padding: 32px;
 
     @media screen and (max-width: 730px) {
       width: 100%;
@@ -45,4 +50,31 @@
     text-overflow: ellipsis;
     -webkit-line-clamp: 4; /* for WebKit browsers */
     line-clamp: 4; /* standard property */
+  }
+
+  .cerrar{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+
+  .project__slider{
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    width:30px;
+    height: 40px;
+    color: var(--white);
+  }
+
+  .project__slider-after{
+    right: -100px;
+    rotate: 180deg;
+  }
+
+  .project__slider-before{
+    left: -100px;
   }

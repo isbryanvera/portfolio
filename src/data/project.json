@@ -1,7 +1,7 @@
 [
     {   "id": "001",
-        "image": "https://via.placeholder.com/220",
-        "description": "Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile full-stack developer with a keen interest in exploring the latest cutting-edge technologies.",
+        "image": "https://imborrable.com/wp-content/uploads/2022/10/fotos-gratis-de-stock-1.jpg",
+        "description": "1Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile full-stack developer with a keen interest in exploring the latest cutting-edge technologies.",
         "title": "MagiCss",
         "technologies": [
         "JavaScript",
@@ -13,8 +13,8 @@
     },
     {
         "id": "002",
-        "image": "https://via.placeholder.com/220",
-        "description": "Hola 1",
+        "image": "https://imborrable.com/wp-content/uploads/2022/10/fotos-gratis-de-stock-1.jpg",
+        "description": "Hola 2",
         "title": "NutriGen",
         "technologies": [
         "JavaScript",
@@ -26,8 +26,8 @@
     },
     {
         "id": "003",
-        "image": "https://via.placeholder.com/220",
-        "description": "Hola 2",
+        "image": "https://imborrable.com/wp-content/uploads/2022/10/fotos-gratis-de-stock-1.jpg",
+        "description": "Hola 3",
         "title": "ShortenerUrl",
         "technologies": [
         "JavaScript",
@@ -39,9 +39,22 @@
     },
     {
         "id": "004",
-        "image": "https://via.placeholder.com/220",
-        "description": "Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile full-stack developer with a keen interest in exploring the latest cutting-edge technologies.",
+        "image": "https://imborrable.com/wp-content/uploads/2022/10/fotos-gratis-de-stock-1.jpg",
+        "description": "4Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile full-stack developer with a keen interest in exploring the latest cutting-edge technologies.",
         "title": "Real Estate App",
+        "technologies": [
+        "JavaScript",
+        "NodeJs",
+        "React",
+        "Tailwind"
+        ],
+        "link":"#"
+    },
+    {
+        "id": "005",
+        "image": "https://imborrable.com/wp-content/uploads/2022/10/fotos-gratis-de-stock-1.jpg",
+        "description": "5Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile full-stack developer with a keen interest in exploring the latest cutting-edge technologies.",
+        "title": "Real Estate App 2",
         "technologies": [
         "JavaScript",
         "NodeJs",

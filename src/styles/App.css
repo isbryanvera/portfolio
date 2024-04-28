@@ -8,7 +8,7 @@
     --font-color-primary: #FF9C1A;
     --white: #FFFFFF;
     --gradient : linear-gradient(90deg, #cd4242,#ff9c1a);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
-
+    --transition: .4s ease;
     /* Media Queries */
     --sm : 990px;
     --md : 1168px;
@@ -51,6 +51,7 @@ html {
 }
 
 body {
+    position: relative;
     width: 100%;
     transition: 0.5s;
     background-color: var(--body);
@@ -126,6 +127,20 @@ main{
         max-width: 760px;
         margin: 0 auto;
     }
+}
+
+#modal{
+    position: absolute;
+    top:0;
+    left: 0;
+   
+}
+
+.open-modal{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: #1d1d1dbe;
 }
 
 /* Animations */

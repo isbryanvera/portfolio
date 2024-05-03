@@ -19,4 +19,8 @@
     justify-content: flex-end;
     top: 16px;
   }
+
+  @media screen and (max-width: 990px) {
+    justify-content: center;
+  }
 }

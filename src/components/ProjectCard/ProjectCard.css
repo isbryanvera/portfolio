@@ -3,7 +3,7 @@
     flex-direction: column;
     border-radius: 16px;
     cursor: pointer;
-    gap: 32px;
+    gap: 16px;
     
     @media screen and (max-width: 730px) {
       align-items: center;
@@ -51,7 +51,7 @@
 .info__project{
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   color: var(--font-color-secondary);
 }
 

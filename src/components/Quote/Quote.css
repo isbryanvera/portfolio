@@ -54,7 +54,7 @@
 
 .bracket {
   position: absolute;
-  z-index: 10;
+  z-index: 4;
   height: 100%;
   width: 1px;
   background: var(--font-color-primary);
